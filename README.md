@@ -6,13 +6,15 @@
   <hr />
 </div>
 
+[![Version][version-badge]][package]
+[![BSD-3-Clause License][license-badge]][license]
+[![Downloads][downloads-badge]][npmtrends]
+[![Bundle size][bundlephobia-badge]][bundlephobia]
+
 [![Build status][circleci-badge]][circleci]
 [![Code Coverage][coveralls-badge]][coveralls]
 [![Dependencies][daviddm-badge]][daviddm]
 [![Maintainability][codeclimate-badge]][codeclimate]
-[![BSD-3-Clause License][license-badge]][license]
-[![Version][version-badge]][package]
-<!-- [![Downloads][downloads-badge]][npmtrends] -->
 
 [![Code of Conduct][code-of-conduct-badge]][code-of-conduct]
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
@@ -108,6 +110,8 @@ If you want to contribute, make sure to check out our [contributing guide][contr
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
+[bundlephobia]: https://bundlephobia.com/result?p=convert-object-keys
+[bundlephobia-badge]: https://img.shields.io/bundlephobia/minzip/convert-object-keys.svg?style=flat-square
 [circleci]: https://circleci.com/gh/trezy-studios/workflows/convert-object-keys
 [circleci-badge]: https://img.shields.io/circleci/build/gh/trezy-studios/convert-object-keys/master.svg?style=flat-square
 [code-of-conduct]: CODE_OF_CONDUCT.md
