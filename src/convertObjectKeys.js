@@ -38,11 +38,15 @@ const convertObjectKeys = (input, transformer, deepTransform = true, hasRecursed
     typeCheckForFirstRecursion(input, transformer)
   }
 
-  if ((!hasRecursed || deepTransform) && Array.isArray(input)) {
-    return input.map(createInputMapper(transformer, deepTransform))
+  if (input !== null) {
+    if ((!hasRecursed || deepTransform) && Array.isArray(input)) {
+      return input.map(createInputMapper(transformer, deepTransform))
+    }
+
+    return Object.entries(input).reduce(createObjectReducer(transformer, deepTransform), {})
   }
 
-  return Object.entries(input).reduce(createObjectReducer(transformer, deepTransform), {})
+  return input
 }
 
 
