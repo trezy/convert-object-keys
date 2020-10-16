@@ -72,7 +72,7 @@ const transformer = (key) => {
   return key.toLowerCase()
 }
 
-convertObjectKeys(objectToConvert, transformer, true /* Recursive conversion enabled */)
+convertObjectKeys(objectToConvert, transformer /* Recursive conversion enabled */)
 /* Result:
 {
   "foo": {
@@ -81,7 +81,7 @@ convertObjectKeys(objectToConvert, transformer, true /* Recursive conversion ena
 }
 */
 
-convertObjectKeys(objectToConvert, transformer, true /* Recursive conversion disabled */)
+convertObjectKeys(objectToConvert, transformer, false /* Recursive conversion disabled */)
 /* Result:
 {
   "foo": {
